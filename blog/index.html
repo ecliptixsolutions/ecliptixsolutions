@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/assets/styles-CEI0Acq9.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" data-precedence="default"/><title>Insights — Ecliptix Solutions</title><meta name="author" content="Ecliptix Solutions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Ecliptix Solutions — Build, Scale &amp; Grow with Future-Ready Solutions"/><meta name="twitter:description" content="Ecliptix Solutions offers premium digital services for business growth, including websites, software, AI automation, and marketing."/><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9a1caf59-992a-4ca7-95c5-f3db70a0087c/id-preview-853c0b89--47922cea-0624-4631-8aab-1b110d57920f.lovable.app-1782558522592.png"/><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9a1caf59-992a-4ca7-95c5-f3db70a0087c/id-preview-853c0b89--47922cea-0624-4631-8aab-1b110d57920f.lovable.app-1782558522592.png"/><meta name="description" content="Notes from the Ecliptix Solutions team on CRM, AI automation, UI/UX, eCommerce, and digital strategy."/><meta property="og:title" content="Insights — Ecliptix Solutions"/><meta property="og:description" content="Practical notes on digital strategy from the Ecliptix Solutions team."/><link rel="modulepreload" href="/assets/index-BrxoEwa7.js"/><link rel="modulepreload" href="/assets/target-BYf00UnK.js"/><link rel="modulepreload" href="/assets/blog-BNGkzVNt.js"/><link rel="modulepreload" href="/assets/site-layout-BfGaQDi4.js"/><link rel="modulepreload" href="/assets/page-header-BlyrrROb.js"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.js" data-artifact-kind="dwl_content_hash" data-artifact-id="9d47bc0ce48d664ed9f7ea0fb4b6c07eb94541b89dddad9b913aee02c1266719" data-commit-sha="7fa165b51ded8bc4f94fde3394f3f4d04920ebed" data-context-token="v1.eyJwcm9qZWN0X2lkIjoiNDc5MjJjZWEtMDYyNC00NjMxLThhYWItMWIxMTBkNTc5MjBmIiwiYXJ0aWZhY3Rfa2luZCI6ImR3bF9jb250ZW50X2hhc2giLCJhcnRpZmFjdF9pZCI6IjlkNDdiYzBjZTQ4ZDY2NGVkOWY3ZWEwZmI0YjZjMDdlYjk0NTQxYjg5ZGRkYWQ5YjkxM2FlZTAyYzEyNjY3MTkiLCJjb21taXRfc2hhIjoiN2ZhMTY1YjUxZGVkOGJjNGY5NGZkZTMzOTRmM2Y0ZDA0OTIwZWJlZCIsImV4cCI6MTc4MzM1MDAxMn0.xuJYCan8g01nMFLAocXWgPlbMAKU-yYbGlOocQo1Sjs"></script></head><body><!--$--><div class="min-h-screen flex flex-col bg-white/[0.04] text-[#050a17]"><header class="sticky top-0 z-50 bg-[#050a17]/85 backdrop-blur-xl border-b border-white/[0.08]"><nav class="container-x h-16 md:h-20 flex items-center justify-between"><a href="/" class="text-lg md:text-xl font-display font-extrabold tracking-tight text-white">ECLIPTIX SOLUTIONS</a><div class="hidden lg:flex items-center gap-7 text-sm font-medium text-white/75"><a href="/" class="hover:text-cyan-accent transition-colors">Home</a><div class="relative"><button class="inline-flex items-center gap-1 transition-colors hover:text-cyan-accent">Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-3.5 transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div><div class="relative"><button class="inline-flex items-center gap-1 transition-colors hover:text-cyan-accent">Hire Talent <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-3.5 transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div><div class="relative"><button class="inline-flex items-center gap-1 transition-colors hover:text-cyan-accent">Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down size-3.5 transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div><a href="/about" class="hover:text-cyan-accent transition-colors">About</a><a href="/portfolio" class="hover:text-cyan-accent transition-colors">Work</a><a class="hover:text-cyan-accent transition-colors text-white" href="/blog" data-status="active" aria-current="page">Blog</a><a href="/reviews" class="hover:text-cyan-accent transition-colors">Reviews</a><a href="/contact" class="hover:text-cyan-accent transition-colors">Contact</a></div><div class="flex items-center gap-3"><a href="/contact" class="hidden sm:inline-flex px-4 md:px-5 py-2.5 bg-cyan-accent text-[#050a17] text-sm font-semibold rounded-full hover:bg-brand-500 hover:text-white transition-all shadow-lg shadow-cyan-accent/20">Book a Free Call</a><button aria-label="Toggle menu" class="lg:hidden p-2 rounded-md text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu size-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></nav></header><main class="flex-1"><section class="relative border-b border-white/[0.08] overflow-hidden"><div class="absolute inset-0 -z-10"><div class="absolute -top-40 -right-40 w-[40rem] h-[40rem] rounded-full bg-brand-500/15 blur-3xl"></div></div><div class="container-x pt-20 md:pt-28 pb-16 md:pb-20"><p class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-4">Insights</p><h1 class="text-4xl md:text-6xl font-display font-extrabold text-white leading-[1.05] max-w-3xl">Notes from the team.</h1><p class="mt-6 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">Short, practical writing on the systems we build and the businesses we build them for.</p><div class="mt-10"><a href="/contact" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-900 text-white font-semibold rounded-xl hover:bg-brand-600 transition-colors">Book a Free Call<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></section><section class="container-x py-20 md:py-24"><div class="grid md:grid-cols-2 gap-5"><article class="p-8 rounded-2xl border border-white/10 bg-white/[0.04] hover:shadow-xl hover:shadow-black/20 transition-all"><div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-4"><span>Operations</span><span class="text-white/35">·</span><span class="text-white/45">6 min read</span></div><h3 class="text-xl font-bold text-white leading-snug mb-3">Why every business needs a CRM system in 2026</h3><p class="text-sm text-white/65 leading-relaxed">If your sales pipeline lives in WhatsApp and a spreadsheet, you don&#x27;t have a pipeline. Here&#x27;s how to fix it without bloating your stack.</p></article><article class="p-8 rounded-2xl border border-white/10 bg-white/[0.04] hover:shadow-xl hover:shadow-black/20 transition-all"><div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-4"><span>AI</span><span class="text-white/35">·</span><span class="text-white/45">8 min read</span></div><h3 class="text-xl font-bold text-white leading-snug mb-3">How AI agents are quietly rewriting business operations</h3><p class="text-sm text-white/65 leading-relaxed">Beyond chatbots — practical automation for follow-ups, reporting, and the work no one wants to do.</p></article><article class="p-8 rounded-2xl border border-white/10 bg-white/[0.04] hover:shadow-xl hover:shadow-black/20 transition-all"><div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-4"><span>Design</span><span class="text-white/35">·</span><span class="text-white/45">5 min read</span></div><h3 class="text-xl font-bold text-white leading-snug mb-3">Top UI/UX trends that actually matter this year</h3><p class="text-sm text-white/65 leading-relaxed">Skip the dribbble theater. The patterns below ship in real products and move real numbers.</p></article><article class="p-8 rounded-2xl border border-white/10 bg-white/[0.04] hover:shadow-xl hover:shadow-black/20 transition-all"><div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-4"><span>Commerce</span><span class="text-white/35">·</span><span class="text-white/45">7 min read</span></div><h3 class="text-xl font-bold text-white leading-snug mb-3">What a high-performance eCommerce site looks like in 2026</h3><p class="text-sm text-white/65 leading-relaxed">Speed, structured data, and a checkout that respects your customer. The non-negotiables, with examples.</p></article><article class="p-8 rounded-2xl border border-white/10 bg-white/[0.04] hover:shadow-xl hover:shadow-black/20 transition-all"><div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-4"><span>Strategy</span><span class="text-white/35">·</span><span class="text-white/45">4 min read</span></div><h3 class="text-xl font-bold text-white leading-snug mb-3">Transforming a local business in the digital era</h3><p class="text-sm text-white/65 leading-relaxed">A short field guide for owners who want results, not a tech-stack lecture.</p></article></div></section></main><footer class="border-t border-white/[0.08] bg-[#070d1c]"><div class="container-x py-16 grid gap-12 md:grid-cols-4"><div class="md:col-span-2 max-w-md"><div class="text-xl font-display font-extrabold tracking-tight text-white">ECLIPTIX SOLUTIONS</div><p class="mt-4 text-sm text-white/65 leading-relaxed">Ecliptix Solutions provides smart digital solutions to help businesses grow online. We focus on quality, innovation, and client satisfaction.</p><div class="mt-6 text-sm text-white/75 space-y-1"><p>Samanvay Sequence, Ambe School Rd, Manjalpur, Vadodara</p><p>+91 98796 79565</p><p>ecliptixsolutions@gmail.com</p></div><div class="mt-6 flex items-center gap-3 text-white/65"><a href="#" aria-label="Instagram" class="p-2 rounded-full hover:bg-white/[0.05] hover:text-cyan-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram size-4" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a href="#" aria-label="Facebook" class="p-2 rounded-full hover:bg-white/[0.05] hover:text-cyan-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook size-4" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="#" aria-label="LinkedIn" class="p-2 rounded-full hover:bg-white/[0.05] hover:text-cyan-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin size-4" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="#" aria-label="YouTube" class="p-2 rounded-full hover:bg-white/[0.05] hover:text-cyan-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube size-4" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div></div><div><h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Company</h4><ul class="space-y-3 text-sm text-white/80"><li><a href="/about" class="hover:text-cyan-accent">About Us</a></li><li><a href="/portfolio" class="hover:text-cyan-accent">Portfolio</a></li><li><a class="hover:text-cyan-accent active" href="/blog" data-status="active" aria-current="page">Blog</a></li><li><a href="/reviews" class="hover:text-cyan-accent">Reviews</a></li><li><a href="/contact" class="hover:text-cyan-accent">Contact Us</a></li><li><a href="/privacy" class="hover:text-cyan-accent">Privacy Policy</a></li><li><a href="/terms" class="hover:text-cyan-accent">Terms &amp; Conditions</a></li></ul></div><div><h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Services</h4><ul class="space-y-3 text-sm text-white/80"><li><a href="/services" class="hover:text-cyan-accent">Custom Software</a></li><li><a href="/services" class="hover:text-cyan-accent">AI Automation</a></li><li><a href="/services" class="hover:text-cyan-accent">CRM Integration</a></li><li><a href="/services" class="hover:text-cyan-accent">eCommerce Management</a></li><li><a href="/services" class="hover:text-cyan-accent">UI / UX Design</a></li><li><a href="/services" class="hover:text-cyan-accent">Digital Marketing</a></li><li><a href="/services" class="hover:text-cyan-accent">Branding</a></li></ul></div></div><div class="border-t border-white/[0.08]"><div class="container-x py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/45"><p>© <!-- -->2026<!-- --> Ecliptix Solutions. All rights reserved.</p><p>Crafted in Vadodara · Serving clients worldwide</p></div></div></footer><a href="https://wa.me/919879679565?text=Hi%20Ecliptix%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-4 py-3 text-sm font-semibold shadow-xl shadow-emerald-900/20 hover:scale-[1.03] active:scale-95 transition-transform"><svg viewBox="0 0 24 24" class="size-5 fill-current" aria-hidden="true"><path d="M19.11 4.91A10.05 10.05 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.34 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.84-7.02ZM12.04 20.1h-.01a8.18 8.18 0 0 1-4.17-1.14l-.3-.18-3.12.82.83-3.04-.19-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.4 5.82c0 4.55-3.7 8.24-8.25 8.24Zm4.52-6.16c-.25-.12-1.46-.72-1.69-.8-.23-.08-.4-.12-.56.13-.17.25-.65.8-.8.97-.15.17-.3.19-.55.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.37-1.7-.14-.25-.02-.39.11-.51.11-.11.25-.3.37-.45.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.73 2.64 4.19 3.7.59.26 1.04.41 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.66-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"></path></svg>WhatsApp</a></div><script>(function(t){let s;try{s=JSON.parse(sessionStorage.getItem(t.storageKey)||"{}")}catch(e){console.error(e);return}const c=t.key||window.history.state?.__TSR_key,r=c?s[c]:void 0;if(t.shouldScrollRestoration&&r&&typeof r=="object"&&Object.keys(r).length>0){for(const e in r){const o=r[e];if(!o||typeof o!="object")continue;const l=o.scrollX,i=o.scrollY;if(!(!Number.isFinite(l)||!Number.isFinite(i))){if(e==="window")window.scrollTo({top:i,left:l,behavior:t.behavior});else if(e){let n;try{n=document.querySelector(e)}catch{continue}n&&(n.scrollLeft=l,n.scrollTop=i)}}}return}const a=window.location.hash.split("#",2)[1];if(a){const e=window.history.state?.__hashScrollIntoViewOptions??!0;if(e){const o=document.getElementById(a);o&&o.scrollIntoView(e)}return}window.scrollTo({top:0,left:0,behavior:t.behavior})})({"storageKey":"tsr-scroll-restoration-v1_3","shouldScrollRestoration":true});document.currentScript.remove()</script><!--/$--><script class="$tsr" id="$tsr-stream-barrier">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-BrxoEwa7.js","/assets/target-BYf00UnK.js"],assets:$R[5]=[$R[6]={tag:"script",attrs:$R[7]={type:"module",async:!0},children:"import(\"/assets/index-BrxoEwa7.js\")"}]},"/blog":$R[8]={preloads:$R[9]=["/assets/blog-BNGkzVNt.js","/assets/site-layout-BfGaQDi4.js","/assets/page-header-BlyrrROb.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1783346412169,s:"success",ssr:!0},$R[12]={i:" blog blog",u:1783346412169,s:"success",ssr:!0}],lastMatchId:" blog blog"})($R["tsr"]);$_TSR.e();document.currentScript.remove()</script><script type="module" async="">import("/assets/index-BrxoEwa7.js")</script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/47922cea-0624-4631-8aab-1b110d57920f?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+</body></html>

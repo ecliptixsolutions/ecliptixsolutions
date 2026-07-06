@@ -1,0 +1,1 @@
+var e=`/assets/strategy-meeting-CKNP_J0J.jpg`;export{e as t};

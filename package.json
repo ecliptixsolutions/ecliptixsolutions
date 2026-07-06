@@ -1,0 +1,10 @@
+{
+  "name": "ecliptix-local-mirror",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "mirror": "node tools/mirror-lovable.mjs",
+    "dev": "node tools/serve-static.mjs"
+  }
+}
