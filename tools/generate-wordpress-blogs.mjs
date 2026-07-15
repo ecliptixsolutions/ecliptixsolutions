@@ -51,7 +51,7 @@ header nav > a[href="/index.html"]:first-child{display:inline-flex!important;fle
 footer > .container-x:first-child > div:first-child > div:first-child{display:inline-flex!important;width:clamp(11rem,30vw,16rem);height:clamp(2.75rem,5vw,3.7rem);overflow:hidden;color:transparent!important;font-size:0!important;line-height:0!important;text-indent:-9999px;white-space:nowrap;background:transparent url("/assets/ecliptix-solutions-logo.png") left center/contain no-repeat}
 html[data-theme="light"] header nav > a[href="/"]:first-child,html[data-theme="light"] header nav > a[href="./"]:first-child,html[data-theme="light"] header nav > a[href="/index.html"]:first-child{padding:.45rem .65rem;background-color:#071124!important;box-shadow:0 10px 28px rgba(7,17,36,.13)}
 html[data-theme="light"] footer > .container-x:first-child > div:first-child > div:first-child{padding:.45rem .65rem;border-radius:.85rem;background-color:#071124!important}
-[id^="project-"] > :first-child:not(.ecliptix-project-media){display:none!important}
+[id^="project-"]{scroll-margin-top:6.75rem}
 </style>`;
 const BLOG_NAV_GUARD = `<script id="ecliptix-blog-nav-guard">
 !function(){function n(n){try{var t=new URL(n,location.href);return t.origin===location.origin&&"/blog"===t.pathname.replace(/\\/+$/,"")}catch(n){return!1}}document.addEventListener("click",function(t){var e=t.target&&t.target.closest&&t.target.closest("a[href]");e&&n(e.getAttribute("href"))&&!t.defaultPrevented&&0===t.button&&!t.metaKey&&!t.ctrlKey&&!t.shiftKey&&!t.altKey&&(t.preventDefault(),t.stopImmediatePropagation(),location.assign("/blog/"))},!0)}();

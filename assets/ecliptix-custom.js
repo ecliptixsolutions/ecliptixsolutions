@@ -136,6 +136,8 @@
   }
 
   function ensureProjectImages() {
+    let shouldRealignHash = false;
+
     Object.entries(PROJECT_IMAGES).forEach(([id, imageData]) => {
       const card = document.getElementById(id);
       if (!card || card.dataset.ecliptixProjectImageReady === "true") return;
@@ -166,6 +168,29 @@
         legacyHero.setAttribute("aria-hidden", "true");
       }
       card.dataset.ecliptixProjectImageReady = "true";
+
+      if (window.location.hash === `#${id}`) {
+        shouldRealignHash = true;
+      }
+    });
+
+    if (shouldRealignHash) {
+      realignProjectHash();
+    }
+  }
+
+  function realignProjectHash() {
+    const id = window.location.hash.slice(1);
+    if (!id || !PROJECT_IMAGES[id]) return;
+
+    const card = document.getElementById(id);
+    if (!card) return;
+
+    window.requestAnimationFrame(() => {
+      card.scrollIntoView({
+        block: "start",
+        inline: "nearest",
+      });
     });
   }
 
@@ -175,6 +200,7 @@
     upgradeFooterBrand();
     ensureThemeToggle();
     ensureProjectImages();
+    realignProjectHash();
   }
 
   function isBlogHref(href) {
@@ -251,6 +277,7 @@
 
   window.addEventListener("load", () => scheduleEnhancement(), { once: true });
   [300, 1200, 2500].forEach(scheduleEnhancement);
+  window.addEventListener("hashchange", () => [0, 150, 500].forEach(scheduleEnhancement));
 
   const observer = new MutationObserver(() => {
     const headerReady = document.querySelector("header .ecliptix-logo-link img") && document.querySelector("header .ecliptix-theme-toggle");
