@@ -4,7 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node tools/build-static.mjs",
+    "migrate:blogs": "node tools/generate-wordpress-blogs.mjs",
     "mirror": "node tools/mirror-lovable.mjs",
     "dev": "node tools/serve-static.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
   }
 }

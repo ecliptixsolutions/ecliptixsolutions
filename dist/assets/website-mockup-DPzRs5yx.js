@@ -1,0 +1,1 @@
+var e=`/assets/dashboard-analytics-DT0lL3a4.jpg`,t=`/assets/crm-pipeline-JQDy6ZeR.jpg`,n=`/assets/ecommerce-dashboard-2Uk8u83N.jpg`,r=`/assets/website-mockup-BspHJqjO.jpg`;export{e as i,n,t as r,r as t};

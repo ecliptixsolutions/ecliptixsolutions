@@ -1,0 +1,1 @@
+var e=`/assets/ai-workflow-DGepgLon.jpg`;export{e as t};

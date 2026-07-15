@@ -1,0 +1,1 @@
+var e=`/assets/design-review-gu7o8H4A.jpg`;export{e as t};
