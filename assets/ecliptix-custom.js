@@ -177,12 +177,23 @@
     ensureProjectImages();
   }
 
+  function isBlogHref(href) {
+    if (!href) return false;
+    try {
+      const url = new URL(href, window.location.href);
+      return url.origin === window.location.origin && url.pathname.replace(/\/+$/, "") === "/blog";
+    } catch (error) {
+      return false;
+    }
+  }
+
   function forceStaticBlogNavigation(event) {
-    const link = event.target.closest && event.target.closest('a[href="/blog"], a[href="/blog/"]');
-    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !isBlogHref(link.getAttribute("href")) || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
     event.preventDefault();
-    window.location.assign("/blog");
+    event.stopImmediatePropagation();
+    window.location.assign("/blog/");
   }
 
   function trackRouteChange() {
