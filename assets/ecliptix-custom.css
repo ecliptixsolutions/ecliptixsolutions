@@ -50,6 +50,38 @@ body {
   transition: background-color 220ms ease, color 220ms ease;
 }
 
+header nav > a[href="/"]:first-child,
+header nav > a[href="./"]:first-child,
+header nav > a[href="/index.html"]:first-child {
+  display: inline-flex !important;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: clamp(11rem, 22vw, 16rem);
+  height: clamp(2.75rem, 5vw, 3.5rem);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background: transparent url("/assets/ecliptix-solutions-logo.png") center / contain no-repeat;
+}
+
+footer > .container-x:first-child > div:first-child > div:first-child {
+  display: inline-flex !important;
+  width: clamp(11rem, 30vw, 16rem);
+  height: clamp(2.75rem, 5vw, 3.7rem);
+  overflow: hidden;
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background: transparent url("/assets/ecliptix-solutions-logo.png") left center / contain no-repeat;
+}
+
 .ecliptix-logo-link {
   display: inline-flex;
   flex: 0 0 auto;
@@ -170,6 +202,10 @@ html[data-theme="light"] .ecliptix-logo-link {
 }
 
 .ecliptix-project-legacy-hero {
+  display: none !important;
+}
+
+[id^="project-"] > :first-child:not(.ecliptix-project-media) {
   display: none !important;
 }
 

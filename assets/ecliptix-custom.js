@@ -233,13 +233,13 @@
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => scheduleEnhancement(350), { once: true });
+    document.addEventListener("DOMContentLoaded", () => scheduleEnhancement(), { once: true });
   } else {
-    scheduleEnhancement(350);
+    scheduleEnhancement();
   }
 
-  window.addEventListener("load", () => scheduleEnhancement(350), { once: true });
-  [1200, 2500].forEach(scheduleEnhancement);
+  window.addEventListener("load", () => scheduleEnhancement(), { once: true });
+  [300, 1200, 2500].forEach(scheduleEnhancement);
 
   const observer = new MutationObserver(() => {
     const headerReady = document.querySelector("header .ecliptix-logo-link img") && document.querySelector("header .ecliptix-theme-toggle");
